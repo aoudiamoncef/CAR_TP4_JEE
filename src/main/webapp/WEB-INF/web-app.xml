@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+
+<display-name>Library</display-name>
+
+
+
+
+        <!--Index-->
+        <servlet>
+        <servlet-name>car.tp4.servlet.LoginServlet</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+        </servlet>
+            <!--mapping-->
+        <servlet-mapping>
+        <servlet-name>car.tp4.servlet.LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        </servlet-mapping>
+
+        <!--Books-->
+        <servlet>
+        <servlet-name>car.tp4.servlet.BookServlet</servlet-name>
+        <jsp-file>/WEB-INF/jsp/books.jsp</jsp-file>
+        </servlet>
+            <!--mapping-->
+        <servlet-mapping>
+        <servlet-name>car.tp4.servlet.BookServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+        </servlet-mapping>
+
+
+
+        <!--Books-->
+        <servlet>
+            <servlet-name>car.tp4.servlet.JdbcUserServlet</servlet-name>
+            <jsp-file>/WEB-INF/jsp/jdbcuser.jsp</jsp-file>
+        </servlet>
+        <!--mapping-->
+        <servlet-mapping>
+            <servlet-name>car.tp4.servlet.JdbcUserServlet</servlet-name>
+            <url-pattern>/jdbcuser</url-pattern>
+        </servlet-mapping>
+
+
+
+        <!--addBook-->
+        <servlet>
+            <servlet-name>car.tp4.servlet.AddBookServlet</servlet-name>
+            <jsp-file>/WEB-INF/jsp/addbook.jsp</jsp-file>
+        </servlet>
+        <!--mapping-->
+        <servlet-mapping>
+            <servlet-name>car.tp4.servlet.AddBookServlet</servlet-name>
+            <url-pattern>/addbook</url-pattern>
+        </servlet-mapping>
+
+
+        <!--displayAuthors-->
+        <servlet>
+            <servlet-name>car.tp4.servlet.DisplayAuthorsServlet</servlet-name>
+            <jsp-file>/WEB-INF/jsp/displayAuthors.jsp</jsp-file>
+        </servlet>
+        <!--mapping-->
+        <servlet-mapping>
+            <servlet-name>car.tp4.servlet.DisplayAuthorsServlet</servlet-name>
+            <url-pattern>/displayauthors</url-pattern>
+        </servlet-mapping>
+
+
+        <!--SortByYearAsc-->
+        <servlet>
+            <servlet-name>car.tp4.servlet.SortedByYearAscServlet</servlet-name>
+            <jsp-file>/WEB-INF/jsp/sortByYearAsc.jsp</jsp-file>
+        </servlet>
+        <!--mapping-->
+        <servlet-mapping>
+            <servlet-name>car.tp4.servlet.SortedByYearAscServlet</servlet-name>
+            <url-pattern>/sortbyyearasc</url-pattern>
+        </servlet-mapping>
+
+
+        <!--SortByYearDESC-->
+        <servlet>
+            <servlet-name>car.tp4.servlet.SortedByYearDescServlet</servlet-name>
+            <jsp-file>/WEB-INF/jsp/sortByYearDesc.jsp</jsp-file>
+        </servlet>
+        <!--mapping-->
+        <servlet-mapping>
+            <servlet-name>car.tp4.servlet.SortedByYearDescServlet</servlet-name>
+            <url-pattern>/sortbyyeardesc</url-pattern>
+        </servlet-mapping>
+
+
+        <!--FinderTitle-->
+        <servlet>
+            <servlet-name>car.tp4.servlet.FinderServlet</servlet-name>
+            <jsp-file>/WEB-INF/jsp/finder.jsp</jsp-file>
+        </servlet>
+        <!--mapping-->
+        <servlet-mapping>
+            <servlet-name>car.tp4.servlet.FinderServlet</servlet-name>
+            <url-pattern>/finder</url-pattern>
+        </servlet-mapping>
+
+    <!--find author-->
+    <servlet>
+        <servlet-name>car.tp4.servlet.FindAuthorServlet</servlet-name>
+        <jsp-file>/WEB-INF/jsp/findAuthor.jsp</jsp-file>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>car.tp4.servlet.FindAuthorServlet</servlet-name>
+        <url-pattern>/findauthor</url-pattern>
+    </servlet-mapping>
+
+
+    <!--Stock-->
+    <servlet>
+        <servlet-name>car.tp4.servlet.StockServlet</servlet-name>
+        <jsp-file>/WEB-INF/jsp/stock.jsp</jsp-file>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>car.tp4.servlet.StockServlet</servlet-name>
+        <url-pattern>/stock</url-pattern>
+    </servlet-mapping>
+
+    <!--Cart-->
+    <servlet>
+        <servlet-name>car.tp4.servlet.CartServlet</servlet-name>
+        <jsp-file>/WEB-INF/jsp/cart.jsp</jsp-file>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>car.tp4.servlet.CartServlet</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+
+    <!--Wellcome-->
+        <welcome-file-list>
+            <welcome-file>/index.jsp</welcome-file>
+        </welcome-file-list>
+
+</web-app>
+
