@@ -2,6 +2,8 @@
 
 This project is based on lightweight and easy-to-use skeleton to create a JEE application that uses [Apache TomEE](http://openejb.apache.org/apache-tomee.html), a complete JEE server based on Tomcat.
 
+![BOOK](https://cloud.githubusercontent.com/assets/22281426/26521640/64401910-42ed-11e7-909f-cc4c28e79dd9.png)
+
 ### Structure
 
 ```
